@@ -53,12 +53,12 @@ public class FileParser{
 	/**
 	 * Closes the filereader
 	 */
-	public void close() throws IOException{
+	public void close(){
 		try{
 			parser.close();
 			line = null;
 		} catch(IOException e){
-			throw new IOException("Failure to close file reader.", e);
+			e.printStackTrace();
 		}
 	}
 	
