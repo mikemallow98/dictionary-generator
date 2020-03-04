@@ -30,7 +30,7 @@ public class LineBasedDocumentHandler implements DocumentI{
 	/**
 	 * retrieves a list of terms from the fileparser
 	 */ 
-	public List parseTerms(){
+	public List<Term> parseTerms(){
 		String nextTerm;
 		int documentCounter = 0;
 		Term temp;
